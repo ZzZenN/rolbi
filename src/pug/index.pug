@@ -1,0 +1,228 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Котофей | Главная'
+    - var pageClass = 'page-index'
+    - var showBreadcrumb = false
+    - var fullSize = true
+    - var showFooterMap = true
+
+block content
+
+    .container
+        .row
+            .col-12.col-xl-8.pr-0.pl-0.pl-lg-3
+                .index-slider-filter-wrap
+                    .index-slider__container
+                        .index-slider
+                            .slide.index-slider__slide
+                                .slide__background(style="background: linear-gradient(0deg, rgba(67, 21, 19, 0.4), rgba(67, 21, 19, 0.4)), url(images/slide--1.png);")
+                                .slide__description
+                                    .slide__description-inner
+                                        .slide__header Вечер живой музыки
+                                        .slide__text 25 апреля приглашаем всех на вечер живой музыки, который пройдет в нашем кафеТепло, уютно…за окном утренняя суета…Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка.
+                                a.slide__more-button.btn.btn-site-secondary(href="#")
+                                    span Подробнее
+
+                            .slide.index-slider__slide
+                                .slide__background(style="background: linear-gradient(0deg, rgba(67, 21, 19, 0.4), rgba(67, 21, 19, 0.4)), url(images/slide--1.png);")
+                                .slide__description
+                                    .slide__description-inner
+                                        .slide__header Вечер живой музыки
+                                        .slide__text 25 апреля приглашаем всех на вечер живой музыки, который пройдет в нашем кафеТепло, уютно…за окном утренняя суета…Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка.
+                                a.slide__more-button.btn.btn-site-secondary(href="#")
+                                    span Подробнее
+
+                            .slide.index-slider__slide
+                                .slide__background(style="background: linear-gradient(0deg, rgba(67, 21, 19, 0.4), rgba(67, 21, 19, 0.4)), url(images/slide--1.png);")
+                                .slide__description
+                                    .slide__description-inner
+                                        .slide__header Вечер живой музыки
+                                        .slide__text 25 апреля приглашаем всех на вечер живой музыки, который пройдет в нашем кафеТепло, уютно…за окном утренняя суета…Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка.
+                                a.slide__more-button.btn.btn-site-secondary(href="#")
+                                    span Подробнее
+                        
+                        .index-slider__navigation
+                            .index-slider__navigation-prev <i class="far fa-chevron-left"></i>
+                            .index-slider__navigation-counter 1/8
+                            .index-slider__navigation-next <i class="far fa-chevron-right"></i>
+
+            .col-12.col-xl-4.d-none.d-xl-flex.pl-3.pl-lg-0
+                .index-right-to-slider-block
+                //- a.index-banner.mb-3(href="#", style="background-image: url(images/index-banner__background--action.jpg)")
+                //-     .index-banner__inner
+                //-         .index-banner__title Август -<br/> месяц кухонь
+                //-         .index-banner__description Распродажа
+
+                //- a.index-banner(href="#", style="background-image: url(images/index-banner__background--subscription.jpg)")
+                //-     .index-banner__inner
+                //-         .index-banner__title Дарим<br/>500 рублей
+                //-         .index-banner__description За подписку на рассылку
+
+        h2.index.text-center Наше меню
+
+    .page-index__our-menu-wrap
+        .container
+            .tiles.page-index__our-menu
+                .row
+                    .col-12.col-md-6.col-lg-8
+                        a.tiles__single.tiles__single--big(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--1.png)')
+                            .tiles__title Рационы Питание+польза
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single.mb-3(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--2.png)')
+                            .tiles__title Обеды
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--3.png)')
+                            .tiles__title Завтраки
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--4.png)')
+                            .tiles__title Меню
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--5.png)')
+                            .tiles__title Детское меню
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--6.png)')
+                            .tiles__title Чай. Кофе. Десерты
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--7.png)')
+                            .tiles__title Полуфабрикаты
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--8.png)')
+                            .tiles__title Праздничное меню
+                    .col-12.col-md-6.col-lg-4
+                        a.tiles__single(href='#')
+                            .tiles__background(style='background-image:url(images/tiles__single--9.png)')
+                            .tiles__title Винная карта
+                            
+    .container
+
+        .text-center.mt-3.mb-5.mb-lg-0: a.btn.btn-site-primary.btn-site-primary--wide(href='#'): span Смотреть всё меню
+
+        h2.index.text-center Наши новости
+
+        .tiled-news.mt-5
+            .row
+                .col-12.col-md-6: a.tiled-news__single(href='#')
+                    .row
+                        .col-12.col-xl-4
+                            .tiled-news__image(style='background-image:url(images/tiled-news__single--1.jpg)')
+                        .col-12.col-xl-8
+                            .tiled-news__text
+                                .tiled-news__title(href='#') Вечер живой музыки
+                                .tiled-news__preview-text Каждую пятницу в 19.00 для вас играет Алексей Шевченко (саксофон)
+                                .tiled-news__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+
+                .col-12.col-md-6: a.tiled-news__single(href='#')
+                    .row
+                        .col-12.col-xl-4
+                            .tiled-news__image(style='background-image:url(images/tiled-news__single--2.jpg)')
+                        .col-12.col-xl-8
+                            .tiled-news__text
+                                .tiled-news__title(href='#') Домашние полуфабрикаты от Котофея
+                                .tiled-news__preview-text Все виды полуфабрикотов. Ручная лепка и отменный вкус
+                                .tiled-news__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+
+                .col-12.col-md-6: a.tiled-news__single(href='#')
+                    .row
+                        .col-12.col-xl-4
+                            .tiled-news__image(style='background-image:url(images/tiled-news__single--3.jpg)')
+                        .col-12.col-xl-8
+                            .tiled-news__text
+                                .tiled-news__title(href='#') День рождения в Котофее
+                                .tiled-news__preview-text Дарим скидку 10% в день рождения на все сладости
+                                .tiled-news__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+
+                .col-12.col-md-6: a.tiled-news__single(href='#')
+                    .row
+                        .col-12.col-xl-4
+                            .tiled-news__image(style='background-image:url(images/tiled-news__single--4.jpg)')
+                        .col-12.col-xl-8
+                            .tiled-news__text
+                                .tiled-news__title(href='#') 10-й кофе в подарок
+                                .tiled-news__preview-text Дарим 10-й кофе 
+                                .tiled-news__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+
+        .text-center.mt-4: a.btn.btn-site-primary.btn-site-primary--wide(href='#'): span Смотреть все
+
+        h2.index.text-center Немного о Котофее
+
+        .mt-5.important-info
+            .row
+                .col-12.col-lg-5.text-center.text-lg-left
+                    .important-info__map
+                .col-12.col-lg-7.pl-0.pl-lg-5.pr-md-3.pr-0
+                    .important-info__slogan 11 лет все дороги ведут в котофей
+                    .important-info__content 
+                        p Тепло, уютно, за окном утренняя суета. Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка. Стараемся, чтобы было как дома. Творим, ищем, экспериментируем.
+                        p Зарабатывайте, учитесь, гуляйте, ходите в театр и кино, а про еду мы подумаем за вас. Встречайтесь, общайтесь, беседуйте, флиртуйте, хихикайте и просто громко смейтесь в кафе КОтоФЕй )))
+                    .text-center.text-lg-left
+                        a.important-info__more-link(href='#') Подробнее
+
+        .features
+            .h-100.bg-footer-top
+                .row
+                    .col-12
+                        .row.h-100
+                            .col-6.col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-5
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_coffee.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Кофе<br/>на вынос
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-5
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_deserts.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Десерты
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-5
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_child-menu.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Детское<br/>меню
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-5
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_events.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Праздничные мероприятия
+                            .col-6.col-md-6.col-lg-3.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-0
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_lunch-delivery.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Доставка<br/>обедов
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-0
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_healthy-food.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Доставка правильного питания
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-0
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_event-delivery.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Доставка праздничного меню
+                            .col-6.col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.mb-5.mb-lg-0
+                                .features__single
+                                    .row
+                                        .col-12.col-md-5.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                                            img.no-zoom.img-fluid.align-self-center(src="images/icon_semimanufactures.svg")
+                                        .col-12.col-md-7.px-3.px-lg-0.d-flex.flex-column.justify-content-center.text-center.text-lg-left
+                                            .features__title Полу-<br/>фабрикаты

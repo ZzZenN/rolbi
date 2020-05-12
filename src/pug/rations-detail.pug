@@ -1,0 +1,108 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Котофей | Рацион S - Сбросить вес'
+    - var pageClass = 'page-rations-detail'
+    - var showBreadcrumb = false
+    - var fullSize = false
+    - var showTitle = false
+    - var pageTitle = 'Рацион S - Сбросить вес'
+
+block content
+
+    .rations-detail
+
+        .row
+            .col-12.col-lg-3.col-xl-4.text-center.text-lg-left
+                img.rations-detail__image(src='images/rations-detail__image--1.jpg')
+            .col-12.col-lg-9.col-xl-8
+                .rations-detail__right
+                    h1.rations-detail__title Рацион S • Сбросить вес
+                    .rations-detail__detail-text Программа показана девушкам, стремящимся снизить вес без вреда здоровью, людям с низким метаболизмом, и людям, с невысокой активностью в течение дня
+                    ul.rations-detail__properties
+                        li.rations-detail__properties-single Энергетическая ценность: <strong>1100 - 1200 Ккал</strong>
+                        li.rations-detail__properties-single Количество приемов пищи: <strong>5</strong>
+                        li.rations-detail__properties-single Количество блюд: <strong>7</strong>
+                    .rations-detail__price
+                        span.rations-detail__price-label Цена:
+                        span.rations-detail__price-value <span>900</span> руб./день
+                    .rations-detail__buttons
+                        .row
+                            .col-12.col-md-6
+                                a.btn.btn-site-primary.btn-site-primary--green.w-100.rations-detail__make-order-button(href='#') Сделать заказ
+                            .col-12.col-md-6
+                                a.btn.btn-site-primary.btn-site-primary--green-inversed.w-100.rations-detail__show-menu-button(href='#') Смотреть меню
+        
+        .rations-detail__discount-variants-label Варианты скидок
+
+        .discount-variants.rations-detail__discount-variants
+            .row
+
+                .col-12.col-md-4
+                    .discount-variants__single-item
+                        .discount-variants__item-top
+                            .discount-variants__discount-value -5<span class="discount-variants__discount-percent-sign">%</span>
+                            .discount-variants__time При предоплате 4 дня
+                        .discount-variants__item-bottom
+                            .discount-variants__prices
+                                .discount-variants__old-price 3 600 руб.
+                                .discount-variants__current-price 3 420 руб.
+
+                .col-12.col-md-4
+                    .discount-variants__single-item.discount-variants__single-item--selected
+                        .discount-variants__item-top
+                            .discount-variants__discount-value -7<span class="discount-variants__discount-percent-sign">%</span>
+                            .discount-variants__time При предоплате 14 дней
+                        .discount-variants__item-bottom
+                            .discount-variants__prices
+                                .discount-variants__old-price 12 600 руб.
+                                .discount-variants__current-price 11 720 руб.
+
+                .col-12.col-md-4
+                    .discount-variants__single-item
+                        .discount-variants__item-top
+                            .discount-variants__discount-value -10<span class="discount-variants__discount-percent-sign">%</span>
+                            .discount-variants__time При предоплате 30 дней
+                        .discount-variants__item-bottom
+                            .discount-variants__prices
+                                .discount-variants__old-price 27 000 руб.
+                                .discount-variants__current-price 24 300 руб.
+
+        .site-info__wrap
+            .site-info
+                .site-info__title.text-center Часто задаваемые вопросы
+                .site-info__content 
+                    .faq-wrap.mt-5
+                        .faq#faq
+                            .faq__single-item.collapsed#bx_651765591_12349(data-toggle='collapse' data-target='#collapse-12349' aria-expanded='false')
+                                .faq__question-text Как сделать заказ?
+                                .faq__answer-text-wrap.collapse#collapse-12349(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Чтобы сделать заказ нужно позвонить по телефону  8 913-541-8008, или заполнив форму заявки на сайте. Заказы принимаются ежедневно с 10 до 19 часов, за два дня до доставки питания
+                            .faq__single-item.collapsed#bx_651765591_12348(data-toggle='collapse' data-target='#collapse-12348' aria-expanded='false')
+                                .faq__question-text Как я могу  оплатить заказ?
+                                .faq__answer-text-wrap.collapse#collapse-12348(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Заказ можете оплатить наличными или по карте курьеру
+                            .faq__single-item.collapsed#bx_651765591_12347(data-toggle='collapse' data-target='#collapse-12347' aria-expanded='false')
+                                .faq__question-text Мне нужно пропустить день, перенести на другой день, заморозить курс, что делать?
+                                .faq__answer-text-wrap.collapse#collapse-12347(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Если Вам необходимо перенести день , сообщите  об этом нашему оператору до____ часов
+                            .faq__single-item.collapsed#bx_651765591_12350(data-toggle='collapse' data-target='#collapse-12350' aria-expanded='false')
+                                .faq__question-text Сколько раз в неделю осуществляется доставка?
+                                .faq__answer-text-wrap.collapse#collapse-12350(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Доставка осуществляется ежедневно либо вечером   с   ___до ____, либо  утром с ____ до __________
+                            .faq__single-item.collapsed#bx_651765591_12351(data-toggle='collapse' data-target='#collapse-12351' aria-expanded='false')
+                                .faq__question-text Можно ли разогревать еду в контейнере?
+                                .faq__answer-text-wrap.collapse#collapse-12351(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Для упаковки блюд мы используем термостойкую упаковку, которую можно разогревать в микроволновой печи. Рекомендуемое время  1 — 2 минуты
+                            .faq__single-item.collapsed#bx_651765591_12352(data-toggle='collapse' data-target='#collapse-12352' aria-expanded='false')
+                                .faq__question-text Как часто употреблять рационы?
+                                .faq__answer-text-wrap.collapse#collapse-12352(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Мы рекомендуем употреблять блюда каждые 2,5 — 3 часа
+                            .faq__single-item.collapsed#bx_651765591_12352(data-toggle='collapse' data-target='#collapse-12352' aria-expanded='false')
+                                .faq__question-text Какие продукты вы используете?
+                                .faq__answer-text-wrap.collapse#collapse-12352(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text За 11 лет работы  «Котофея» у нас сложились крепкие партнерские  отношения  с  местными поставщиками.  Вся продукция имеет  сертификаты соответствия. Скоропортящиеся  и фермерские продукты мы закупаем один раз в два дня
+                            .faq__single-item.collapsed#bx_651765591_12353(data-toggle='collapse' data-target='#collapse-12353' aria-expanded='false')
+                                .faq__question-text Кто занимается составлением меню?
+                                .faq__answer-text-wrap.collapse#collapse-12353(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Меню составляет и корректирует профессиональный диетолог Захарова Елена Владимировна. По технологическим картам нашего заведующего производством  Новицкой Ирины

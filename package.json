@@ -1,0 +1,27 @@
+{
+  "name": "rolbi",
+  "version": "1.0.0",
+  "description": "Вёрстка сайта \"Ролби\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZzZenN",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "mmenu-js": "^8.4.0",
+    "popper.js": "^1.15.0",
+    "slick-slider": "^1.8.2"
+  }
+}

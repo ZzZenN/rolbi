@@ -1,0 +1,213 @@
+block vars
+    - var title = 'Котофей'
+    - var pageClass = ''
+    - var showBreadcrumb = false
+    - var showSidebar = false
+    - var pageTitle = 'Котофей'
+    - var showTitle = true
+    - var fullSize = false
+    - var showFooterMap = false
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        title #{title}
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        
+        block styles
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext")
+            link(rel="stylesheet", href="libs/font-awesome/css/all.min.css")
+            link(rel="stylesheet", href="libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css")
+            link(rel="stylesheet", href="libs/slick-slider/slick/slick.css")
+            link(rel="stylesheet", href="libs/slick-slider/slick/slick-theme.css")
+            link(rel="stylesheet", href="css/style.css")
+        block additional-styles
+    body(class=pageClass)
+        #page-wrapper.page-wrapper
+
+            .mobile-menu-bar
+                a.mobile-menu-bar__link(href='#mobile-menu-bar' onclick='this.classList.toggle("mobile-menu-bar__link--active")')
+                    i.fas.fa-bars
+                a.mobile-menu-bar__logo(href="/")
+                    img.mobile-menu-bar__logo-picture(src="images/header__logo-picture--mobile.svg")
+
+            div
+                .site-top
+
+                    nav.navbar.d-lg-none.d-block.py-0.mobile-menu__wrap
+                        .fixed-bottom.mobile-menu#mobile-menu-bar
+                            ul.navbar-nav.mr-auto
+                                li.nav-item.nav-item--parent
+                                    .nav-item-parent-wrap
+                                        a.nav-link(href='/catalog/plodovye-kultury/')
+                                            span Наше меню
+                                        a.nav-link-opener
+                                    ul.nav-column
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/abrikos/'): span Рационы Питание+Польза
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/vinograd/'): span Обеды
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/vishnya/'): span Завтраки
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/grusha/'): span Меню
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/zhimolost/'): span Детское меню
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/leshchina/'): span Чай. Кофе, десерты
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/malina/'): span Полуфабрикаты
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/persik/'): span Праздничное меню
+                                        li.nav-link: a(href='/catalog/plodovye-kultury/sliva/'): span Винная карта
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span О нас
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Условия доставки
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Новости
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Галерея
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Контакты
+
+                            .mobile-menu__contacts
+                                .mobile-menu__contacts-title Стол заказов
+                                a.mobile-menu__phone(href='tel:+73902266722')
+                                    span +7 (3902) 266-722
+                                .mobile-menu__mail-insta
+                                    a.mobile-menu__contacts-mail(href='mailto:cafekotofey19@yandex.ru') cafekotofey19@yandex.ru
+                                    a.mobile-menu__contacts-insta(href='#'): img(src="images/header__contacts-insta--image.svg")
+
+                    .header__wrap
+                        .container
+                            .header__outer
+                                header.header    
+                                    .row
+                                        .col-6.col-md-3
+                                            .site-logo
+                                                a.site-logo__link(href="/")
+                                                    .site-logo__text
+                                                        img.site-logo__text-picture(src="images/header__logo-picture.svg")
+                                        
+                                        .col-5.d-md-flex.d-none.justify-content-center.flex-column
+                                            ul.header__logo-description
+                                                li М<span>ного</span>
+                                                li Ф<span>ункциональное</span>
+                                                li К<span>афе</span>
+                                        .col-9.col-md-4.d-flex.align-items-end.justify-content-center.flex-column
+                                            .header__contacts-wrap
+                                                .header__contacts-title Стол заказов
+                                                a.header__phone(href='tel:+73902266722')
+                                                    span +7 (3902) 266-722
+                                                .header__mail-insta
+                                                    a.header__contacts-mail(href='mailto:cafekotofey19@yandex.ru') cafekotofey19@yandex.ru
+                                                    a.header__contacts-insta(href='#'): img(src="images/header__contacts-insta--image.svg")
+                            
+                    .header__menu.header-menu
+                        .container
+                            .d-none.d-lg-block
+                                .header-menu__inner
+
+                                    ul.nav
+
+                                        li.nav-link
+                                            a(href="catalog.html")
+                                                span.one-lvl Наше меню
+                                                i.fal.fa-angle-down
+                                            ul
+                                                li.nav-column-wrap
+                                                    ul.nav-column
+                                                        li.nav-link-second.nav-link-second--parent
+                                                            a(href="#"): span Рационы Питание+Польза 
+                                                            ul.nav-column
+                                                                li.nav-link-third: a(href='#'): span Сбросить вес • 1100 — 1200 Ккал
+                                                                li.nav-link-third: a(href='#'): span Быть в форме • 1000 — 1100 Ккал
+                                                                li.nav-link-third: a(href='#'): span Активное занятие спортом • 900 — 1000 Ккал
+                                                                li.nav-link-third: a(href='#'): span Детокс • 900 — 1000 Ккал
+
+                                                        li.nav-link-second: a(href="#"): span Обеды
+                                                        li.nav-link-second: a(href="#"): span Завтраки
+                                                        li.nav-link-second: a(href="#"): span Меню
+                                                        li.nav-link-second: a(href="#"): span Детское меню
+                                                        li.nav-link-second: a(href="#"): span Чай. Кофе. Десерты
+                                                        li.nav-link-second: a(href="#"): span Полуфабрикаты
+                                                        li.nav-link-second: a(href="#"): span Праздничное меню
+                                                        li.nav-link-second: a(href="#"): span Винная карта
+
+                                        li.nav-link: a(href="shops.html"): span.one-lvl О нас
+                                        li.nav-link: a(href="shops.html"): span.one-lvl Условия доставки
+                                        li.nav-link: a(href="shops.html"): span.one-lvl Новости
+                                        li.nav-link: a(href="shops.html"): span.one-lvl Галерея
+                                        li.nav-link: a(href="shops.html"): span.one-lvl Контакты
+
+                    main.main
+                        if showBreadcrumb
+                            .container.pt-4.pb-4
+                                .nav: ol.breadcrumb
+                                    li.breadcrumb-item: a(href="#") Кухня и столовая
+                                    li.breadcrumb-item: a(href="#") Кухонные гарнитуры
+                                    li.breadcrumb-item: a(href="#") Готовые кухонные гарнитуры
+
+                        if fullSize
+                            if showTitle
+                                .content
+                                    h1 #{pageTitle}
+                                    block content
+                            else
+                                .content.content--no-title
+                                    block content
+                        else
+                            .container
+                                if showTitle
+                                    .content
+                                        h1 #{pageTitle}
+                                        block content
+                                else
+                                    .content.content--no-title
+                                        block content      
+
+            footer.footer
+
+                .footer__middle
+                    .container
+
+                        .row
+                            .col-12.col-lg-6.col-xl-3.d-flex.align-items-center
+                                a.footer__site-logo-link(href="#")
+                                    img(src='images/footer__site-logo.svg')
+                            .col-12.col-lg-3.justify-content-center.align-items-center.d-none.d-xl-flex
+                                ul.footer__logo-description
+                                    li Много
+                                    li Функциональное
+                                    li Кафе
+                            .col-12.col-lg-6
+                                .footer__contacts
+                                    .footer__address г. Абакан, улица И. Ярыгина, 24 (район «Вечного огня»)
+                                    .footer__phone <a href="tel:+79135418008">+7 913 541 8008</a>, <a href="tel:+73902266722">+7 (3902) 266-722</a>
+                                    .footer__mail-ig <a href="mailto:cafekotofey19@yandex.ru">cafekotofey19@yandex.ru</a>  | <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        //- .d-flex.justify-content-center.align-items-center.mt-4
+                        //-     .footer__info-label Нам важно ваше мнение:
+                        //-     a.btn.btn-site-primary-outline.ml-4.footer__feedback-link(href='#') Напишите нам
+
+                        //- .footer__socials
+                        //-     .footer__subheader.d-inline-block Мы в соцсетях
+                        //-     .footer__socials-icons.socials-icons.d-inline-block
+                        //-         .socials-icons__inner
+                        //-             a.socials-icons__link.socials-icons__link--type--ok(href="#"): i.fab.fa-odnoklassniki
+                        //-             a.socials-icons__link.socials-icons__link--type--vk(href="#"): i.fab.fa-vk
+                        //-             a.socials-icons__link.socials-icons__link--type--tw(href="#"): i.fab.fa-twitter
+
+                if showFooterMap
+                    .footer__map(style='images/footer__map.jpg')
+
+                .footer__bottom
+                    .container
+                        .row.flex-column.flex-md-row
+                            .col-12.col-md-8.d-flex.align-items-center.justify-content-center.justify-content-md-start
+                                .footer__copyright
+                                    .footer__copyright-text © МФК Котофей. 2020.
+                                    a.footer__confidential-link(href='#') Политика конфиденциальности
+
+                            .col-12.col-md-4.d-flex.justify-content-center.justify-content-md-end
+                                .footer__developer
+                                    span Разработка сайта:
+                                    a(href='http://khakasia.ru/' target='_blank') Хакасия.ру                          
+
+
+            
+            script(src="libs/jquery/dist/jquery.min.js")
+            script(src="libs/popper.js/dist/umd/popper.min.js")
+            script(src="libs/bootstrap/dist/js/bootstrap.min.js")
+            script(src="libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js")
+            script(src="libs/slick-slider/slick/slick.min.js")
+            script(src="js/script.js")

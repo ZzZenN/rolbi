@@ -1,0 +1,56 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Котофей | Наше меню'
+    - var pageClass = 'page-menu'
+    - var showBreadcrumb = false
+    - var fullSize = false
+    - var showTitle = true
+    - var pageTitle = 'Наше меню'
+
+block content
+
+    .tiles
+        .row
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--1.png)')
+                    .tiles__title Рационы Питание+Польза
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--2.png)')
+                    .tiles__title Обеды
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--3.png)')
+                    .tiles__title Завтраки
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--4.png)')
+                    .tiles__title Меню
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--5.png)')
+                    .tiles__title Детское меню
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--6.png)')
+                    .tiles__title Чай. Кофе. Десерты
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--7.png)')
+                    .tiles__title Полуфабрикаты
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--8.png)')
+                    .tiles__title Праздничное меню
+            .col-12.col-md-4
+                a.tiles__single(href='our-menu-detail.html')
+                    .tiles__background(style='background-image:url(images/tiles__single--9.png)')
+                    .tiles__title Винная карта
+
+    .site-info
+        .site-info__title Все самое вкусное в кафе Котофей
+        .site-info__content 
+            p Тепло, уютно, за окном утренняя суета. Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка. Стараемся, чтобы было как дома. Творим, ищем, экспериментируем. 
+            p Зарабатывайте, учитесь, гуляйте, ходите в театр и кино, а про еду мы подумаем за вас. Встречайтесь, общайтесь, беседуйте, флиртуйте, хихикайте и просто громко смейтесь в кафе КОтоФЕй )))

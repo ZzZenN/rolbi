@@ -1,0 +1,101 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Котофей | Рационы Питание+Польза'
+    - var pageClass = 'page-menu-detail'
+    - var showBreadcrumb = false
+    - var fullSize = false
+    - var showTitle = true
+    - var pageTitle = 'Рационы Питание+Польза'
+
+block content
+
+    .menu-detail
+
+        .row.flex-column-reverse.flex-lg-row
+            .col-12.col-lg-7
+                .menu-detail__slogan Выбери здоровье!
+                .menu-detail__detail-text
+                    p Тепло, уютно, за окном утренняя суета. Дразнящий аромат свежесваренного кофе, божественный запах сырных булочек, домашняя каша, сырники, запеканка. Стараемся, чтобы было как дома. Творим, ищем, экспериментируем. 
+                    p Зарабатывайте, учитесь, гуляйте, ходите в театр и кино, а про еду мы подумаем за вас. Встречайтесь, общайтесь, беседуйте, флиртуйте, хихикайте и просто громко смейтесь в кафе КОтоФЕй )))
+            .col-12.col-lg-5.text-center.text-lg-right
+                img.menu-detail__image(src='images/menu-detail__image--1.jpg')
+
+        h2.d-none.d-sm-block Наши рационы
+
+        .rations-list
+            .rations-list__single-item
+                .row
+                    .col-12.col-lg-2
+                        img.rations-list__image(src='images/rations-list__image--1.svg')
+                    .col-12.col-lg-10
+                        .rations-list__text
+                            a.rations-list__name(href='#') Сбросить вес • 1100 — 1200 Ккал
+                            .rations-list__description Программа показана девушкам, стремящимся снизить вес без вреда здоровью, людям с низким метаболизмом, и людям, с невысокой активностью в течение дня
+                            a.rations-list__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+            .rations-list__single-item
+                .row
+                    .col-12.col-lg-2
+                        img.rations-list__image(src='images/rations-list__image--2.svg')
+                    .col-12.col-lg-10
+                        .rations-list__text
+                            a.rations-list__name(href='#') Быть в форме
+                            .rations-list__description Программа для поддержания здорового образа жизни женщин и методичного снижения веса мужчин
+                            a.rations-list__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+            .rations-list__single-item
+                .row
+                    .col-12.col-lg-2
+                        img.rations-list__image(src='images/rations-list__image--3.svg')
+                    .col-12.col-lg-10
+                        .rations-list__text
+                            a.rations-list__name(href='#') Активное занятие спортом
+                            .rations-list__description Универсальная программа для активных в течении дня и тех, кто занимается спортом.
+                            a.rations-list__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+            .rations-list__single-item
+                .row
+                    .col-12.col-lg-2
+                        img.rations-list__image(src='images/rations-list__image--4.svg')
+                    .col-12.col-lg-10
+                        .rations-list__text
+                            a.rations-list__name(href='#') Детокс
+                            .rations-list__description В программу входят свежевыжатые соки, их миксы, дроблёные орехи, 1,5% молоко, кокосовое молоко, проростки и ростки злаков, сухофрукты и сиропы собственного производства из ягод на фруктозе
+                            a.rations-list__more-link(href='#') Подробнее <i class="far fa-chevron-right"></i>
+
+        .site-info__wrap
+            .site-info
+                .site-info__title.text-center Часто задаваемые вопросы
+                .site-info__content
+                    .faq-wrap.mt-5
+                        .faq#faq
+                            .faq__single-item.collapsed#bx_651765591_12349(data-toggle='collapse' data-target='#collapse-12349' aria-expanded='false')
+                                .faq__question-text Как сделать заказ?
+                                .faq__answer-text-wrap.collapse#collapse-12349(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Чтобы сделать заказ нужно позвонить по телефону  8 913-541-8008, или заполнив форму заявки на сайте. Заказы принимаются ежедневно с 10 до 19 часов, за два дня до доставки питания
+                            .faq__single-item.collapsed#bx_651765591_12348(data-toggle='collapse' data-target='#collapse-12348' aria-expanded='false')
+                                .faq__question-text Как я могу  оплатить заказ?
+                                .faq__answer-text-wrap.collapse#collapse-12348(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Заказ можете оплатить наличными или по карте курьеру
+                            .faq__single-item.collapsed#bx_651765591_12347(data-toggle='collapse' data-target='#collapse-12347' aria-expanded='false')
+                                .faq__question-text Мне нужно пропустить день, перенести на другой день, заморозить курс, что делать?
+                                .faq__answer-text-wrap.collapse#collapse-12347(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Если Вам необходимо перенести день , сообщите  об этом нашему оператору до____ часов
+                            .faq__single-item.collapsed#bx_651765591_12350(data-toggle='collapse' data-target='#collapse-12350' aria-expanded='false')
+                                .faq__question-text Сколько раз в неделю осуществляется доставка?
+                                .faq__answer-text-wrap.collapse#collapse-12350(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Доставка осуществляется ежедневно либо вечером   с   ___до ____, либо  утром с ____ до __________
+                            .faq__single-item.collapsed#bx_651765591_12351(data-toggle='collapse' data-target='#collapse-12351' aria-expanded='false')
+                                .faq__question-text Можно ли разогревать еду в контейнере?
+                                .faq__answer-text-wrap.collapse#collapse-12351(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Для упаковки блюд мы используем термостойкую упаковку, которую можно разогревать в микроволновой печи. Рекомендуемое время  1 — 2 минуты
+                            .faq__single-item.collapsed#bx_651765591_12352(data-toggle='collapse' data-target='#collapse-12352' aria-expanded='false')
+                                .faq__question-text Как часто употреблять рационы?
+                                .faq__answer-text-wrap.collapse#collapse-12352(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Мы рекомендуем употреблять блюда каждые 2,5 — 3 часа
+                            .faq__single-item.collapsed#bx_651765591_12352(data-toggle='collapse' data-target='#collapse-12352' aria-expanded='false')
+                                .faq__question-text Какие продукты вы используете?
+                                .faq__answer-text-wrap.collapse#collapse-12352(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text За 11 лет работы  «Котофея» у нас сложились крепкие партнерские  отношения  с  местными поставщиками.  Вся продукция имеет  сертификаты соответствия. Скоропортящиеся  и фермерские продукты мы закупаем один раз в два дня
+                            .faq__single-item.collapsed#bx_651765591_12353(data-toggle='collapse' data-target='#collapse-12353' aria-expanded='false')
+                                .faq__question-text Кто занимается составлением меню?
+                                .faq__answer-text-wrap.collapse#collapse-12353(aria-labelledby='headingTwo' data-parent='#faq')
+                                    .faq__answer-text Меню составляет и корректирует профессиональный диетолог Захарова Елена Владимировна. По технологическим картам нашего заведующего производством  Новицкой Ирины
