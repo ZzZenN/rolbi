@@ -52,9 +52,7 @@ $(document).ready(function() {
                     arrows: false
                 }
             }
-        ],
-        prevArrow: $('.index-slider__navigation-prev'),
-        nextArrow: $('.index-slider__navigation-next')
+        ]
 	});
 
 	$('li.one-lvl').hover(function() {

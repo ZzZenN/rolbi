@@ -1,9 +1,9 @@
 block vars
-    - var title = 'Котофей'
+    - var title = 'Доминион Синема'
     - var pageClass = ''
     - var showBreadcrumb = false
     - var showSidebar = false
-    - var pageTitle = 'Котофей'
+    - var pageTitle = 'Доминион Синема'
     - var showTitle = true
     - var fullSize = false
     - var showFooterMap = false
@@ -67,19 +67,25 @@ html(lang="ru")
                                     a.mobile-menu__contacts-mail(href='mailto:cafekotofey19@yandex.ru') cafekotofey19@yandex.ru
                                     a.mobile-menu__contacts-insta(href='#'): img(src="images/header__contacts-insta--image.svg")
                             
-                    .header-menu
+                    
+                    .header
                         .container
                             .d-none.d-lg-block
-                                .header-menu__inner
-                                    .row
-                                        .col-12.col-md-4
-                                        .col-12.col-md-6
-                                            ul.nav
-                                                li.nav-link: a(href="shops.html"): span.one-lvl Фильмы
-                                                li.nav-link: a(href="shops.html"): span.one-lvl Расписание
-                                                li.nav-link: a(href="shops.html"): span.one-lvl Премьеры
-                                                li.nav-link: a(href="shops.html"): span.one-lvl Зрителям
-                                        .col-12.col-md-2 Телефон
+                                .row
+                                    .col-12.col-md-8.d-flex.align-items-center
+                                        a.header__logo-link(href='/'): img(src='../images/header__logo.svg') 
+                                    .col-24.col-md-12.d-flex.align-items-center.justify-content-center
+                                        .header-menu
+                                            .header-menu__inner
+                                                ul.nav
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Фильмы
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Расписание
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Премьеры
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Зрителям
+                                    .col-12.col-md-4.d-flex.align-items-center
+                                        .contacts-phone
+                                            .contacts-phone__label Заказ билетов
+                                            .contacts-phone__number: a(href='tel:+73902555333') 555-333
 
                     main.main
                         if showBreadcrumb
@@ -110,47 +116,51 @@ html(lang="ru")
             footer.footer
 
                 .footer__middle
-                    .container
 
-                        .row
-                            .col-12.col-lg-6.col-xl-3.d-flex.align-items-center
-                                a.footer__site-logo-link(href="#")
-                                    img(src='images/footer__site-logo.svg')
-                            .col-12.col-lg-3.justify-content-center.align-items-center.d-none.d-xl-flex
-                                ul.footer__logo-description
-                                    li Много
-                                    li Функциональное
-                                    li Кафе
-                            .col-12.col-lg-6
-                                .footer__contacts
-                                    .footer__address г. Абакан, улица И. Ярыгина, 24 (район «Вечного огня»)
-                                    .footer__phone <a href="tel:+79135418008">+7 913 541 8008</a>, <a href="tel:+73902266722">+7 (3902) 266-722</a>
-                                    .footer__mail-ig <a href="mailto:cafekotofey19@yandex.ru">cafekotofey19@yandex.ru</a>  | <a href="#"><i class="fab fa-instagram"></i></a>
+                    .footer__middle-top
+                        .container
+                            .footer__middle-top-inner
+                                .row
+                                    .col-24.col-lg-12.col-xl-10.d-flex.align-items-center
+                                        a.footer__site-logo-link(href="#")
+                                            img(src='images/header__logo.svg')
+                                    .col-24.col-lg-12.col-xl-14.d-flex.align-items-center.justify-content-end
+                                        .header-menu
+                                            .header-menu__inner
+                                                ul.nav
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Фильмы
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Расписание
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Премьеры
+                                                    li.nav-link: a(href="shops.html"): span.one-lvl Зрителям
 
-                        //- .d-flex.justify-content-center.align-items-center.mt-4
-                        //-     .footer__info-label Нам важно ваше мнение:
-                        //-     a.btn.btn-site-primary-outline.ml-4.footer__feedback-link(href='#') Напишите нам
-
-                        //- .footer__socials
-                        //-     .footer__subheader.d-inline-block Мы в соцсетях
-                        //-     .footer__socials-icons.socials-icons.d-inline-block
-                        //-         .socials-icons__inner
-                        //-             a.socials-icons__link.socials-icons__link--type--ok(href="#"): i.fab.fa-odnoklassniki
-                        //-             a.socials-icons__link.socials-icons__link--type--vk(href="#"): i.fab.fa-vk
-                        //-             a.socials-icons__link.socials-icons__link--type--tw(href="#"): i.fab.fa-twitter
-
-                if showFooterMap
-                    .footer__map(style='images/footer__map.jpg')
+                    .footer__middle-bottom
+                        .container
+                            .row
+                                .col-24.col-lg-8.d-flex.align-items-center
+                                    .footer__address
+                                        .footer__address-label Мы находимся по адресу:
+                                        .footer__address-text г. Абакан, ул. Некрасова, 52
+                                .col-24.col-lg-8.d-flex.align-items-center.justify-content-center
+                                    .footer__socials
+                                        .socials-icons.d-inline-block
+                                            .socials-icons__inner
+                                                a.socials-icons__link.socials-icons__link--type--vk(href="#"): i.fab.fa-vk
+                                                a.socials-icons__link.socials-icons__link--type--fb(href="#"): i.fab.fa-facebook-f
+                                                a.socials-icons__link.socials-icons__link--type--ok(href="#"): i.fab.fa-odnoklassniki
+                                .col-24.col-lg-8.d-flex.justify-content-end
+                                    .contacts-phone
+                                        .contacts-phone__label Заказ билетов
+                                        .contacts-phone__number: a(href='tel:+73902555333') 555-333
 
                 .footer__bottom
                     .container
                         .row.flex-column.flex-md-row
-                            .col-12.col-md-8.d-flex.align-items-center.justify-content-center.justify-content-md-start
+                            .col-24.col-md-16.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                 .footer__copyright
-                                    .footer__copyright-text © МФК Котофей. 2020.
+                                    .footer__copyright-text © 2020 Кинотеатр «DominionCinema» - все права защищены.
                                     a.footer__confidential-link(href='#') Политика конфиденциальности
 
-                            .col-12.col-md-4.d-flex.justify-content-center.justify-content-md-end
+                            .col-24.col-md-8.d-flex.justify-content-center.justify-content-md-end
                                 .footer__developer
                                     span Разработка сайта:
                                     a(href='http://khakasia.ru/' target='_blank') Хакасия.ру                          
