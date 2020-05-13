@@ -11751,15 +11751,13 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 }
 
 h1, .h1 {
-  line-height: 58px;
-  font-size: 62px;
-  font-weight: bold;
-  font-family: Karmina Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #891723;
-  font-weight: bold;
-  margin-bottom: 3rem;
+  color: white;
+  margin-bottom: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @media (max-width: 767px) {
@@ -14907,4 +14905,10 @@ body:not(.page-index) .main .content--no-title {
 
 .socials-icons__link:hover, .socials-icons__link:focus {
   text-decoration: none;
+}
+
+.title-block {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: rgba(1, 8, 13, 0.5);
 }

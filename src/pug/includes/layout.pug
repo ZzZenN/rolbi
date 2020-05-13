@@ -80,7 +80,7 @@ html(lang="ru")
                                                 ul.nav
                                                     li.nav-link: a(href="shops.html"): span.one-lvl Фильмы
                                                     li.nav-link: a(href="shops.html"): span.one-lvl Расписание
-                                                    li.nav-link: a(href="shops.html"): span.one-lvl Премьеры
+                                                    li.nav-link: a(href="premiers.html"): span.one-lvl Премьеры
                                                     li.nav-link: a(href="shops.html"): span.one-lvl Зрителям
                                     .col-12.col-md-4.d-flex.align-items-center
                                         .contacts-phone
@@ -97,19 +97,23 @@ html(lang="ru")
 
                         if fullSize
                             if showTitle
-                                .content
+                                .title-block
                                     h1 #{pageTitle}
+                                .content
                                     block content
                             else
                                 .content.content--no-title
                                     block content
                         else
-                            .container
-                                if showTitle
-                                    .content
+                            if showTitle
+                                .title-block
+                                    .container
                                         h1 #{pageTitle}
+                                .container
+                                    .content
                                         block content
-                                else
+                            else
+                                .container
                                     .content.content--no-title
                                         block content      
 

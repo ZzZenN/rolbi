@@ -300,15 +300,13 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 
 
 h1, .h1 {
-    line-height: 58px;
-    font-size: 62px;
-    font-weight: bold;
-    font-family: $font-family-karmina-bold;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #891723;
-    font-weight: bold;
-    margin-bottom: 3rem;
+    color: white;
+    margin-bottom: 0;
+    font-family: $font-family-sans-serif;
 
     @media (max-width: 767px) {
         font-size: 42px;
@@ -3168,4 +3166,10 @@ body:not(.page-index) {
             text-decoration: none;
         }
     }
+}
+
+.title-block {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: rgba(1, 8, 13, 0.5);
 }
