@@ -98,7 +98,62 @@ html(lang="ru")
                         if fullSize
                             if showTitle
                                 .title-block
-                                    h1 #{pageTitle}
+                                    .row
+                                        .col-24.col-lg-18.d-flex.align-items-center
+                                            h1 #{pageTitle}
+                                        .col-24.col-lg-6.d-flex.justify-content-end.align-items-center
+                                            .type-switch
+                                                a.type-switch__link.type-switch__link--active(href='schedule-halls.html') По залам
+                                                a.type-switch__link(href='#') По времени
+                                    ul.nav.nav-tabs
+                                        li.nav-item
+                                            a.nav-link.active.schedule-day(href='#')
+                                                .schedule-day__left 27
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Сегодня
+                                                    .schedule-day__month Октябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 28
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Завтра
+                                                    .schedule-day__month Октябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 29
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Чт
+                                                    .schedule-day__month Октябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 30
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Пт
+                                                    .schedule-day__month Октябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 31
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Сб
+                                                    .schedule-day__month Октябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 01
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Вс
+                                                    .schedule-day__month Ноябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 02
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Пн
+                                                    .schedule-day__month Ноябрь
+                                        li.nav-item
+                                            a.nav-link.schedule-day(href='#')
+                                                .schedule-day__left 03
+                                                .schedule-day__right
+                                                    .schedule-day__day-of-week Вт
+                                                    .schedule-day__month Ноябрь
                                 .content
                                     block content
                             else
@@ -108,7 +163,62 @@ html(lang="ru")
                             if showTitle
                                 .title-block
                                     .container
-                                        h1 #{pageTitle}
+                                        .row
+                                            .col-24.col-lg-18.d-flex.align-items-center
+                                                h1 #{pageTitle}
+                                            .col-24.col-lg-6.d-flex.justify-content-end.align-items-center
+                                                .type-switch
+                                                    a.type-switch__link.type-switch__link--active(href='schedule-halls.html') По залам
+                                                    a.type-switch__link(href='#') По времени
+                                        ul.nav.nav-tabs
+                                            li.nav-item
+                                                a.nav-link.active.schedule-day(href='#')
+                                                    .schedule-day__left 27
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Сегодня
+                                                        .schedule-day__month Октябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 28
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Завтра
+                                                        .schedule-day__month Октябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 29
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Чт
+                                                        .schedule-day__month Октябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 30
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Пт
+                                                        .schedule-day__month Октябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 31
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Сб
+                                                        .schedule-day__month Октябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 01
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Вс
+                                                        .schedule-day__month Ноябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 02
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Пн
+                                                        .schedule-day__month Ноябрь
+                                            li.nav-item
+                                                a.nav-link.schedule-day(href='#')
+                                                    .schedule-day__left 03
+                                                    .schedule-day__right
+                                                        .schedule-day__day-of-week Вт
+                                                        .schedule-day__month Ноябрь
                                 .container
                                     .content
                                         block content

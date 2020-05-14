@@ -107,10 +107,9 @@ $component-active-bg:       $secondary;
 
 $nav-tabs-border-width:             2px;
 $nav-tabs-border-color:				transparent;
-$nav-tabs-link-hover-border-color:  transparent transparent $header-links-color;
-$nav-tabs-link-active-border-color: transparent transparent $header-links-color;
-$nav-tabs-link-active-bg:           transparent;
-$nav-tabs-link-active-color:        $header-links-color;
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-border-color: transparent;
+$nav-tabs-link-active-bg:           white;
 
 $pagination-color:          $site-font-gray;
 $pagination-hover-color:    $secondary;
@@ -468,6 +467,8 @@ body {
         border-left: none;
         border-right: none;
         border-top: none;
+        padding: 8px 16px;
+        border-radius: 5px 5px 0 0;
     }
 }
 
@@ -1910,6 +1911,7 @@ body {
 
             &:last-child {
                 margin-right: 0;
+                padding-right: 0;
             }
         }
 
@@ -2556,6 +2558,12 @@ body {
     }
 }
 
+.page-schedule {
+    .title-block {
+        border-bottom: 1px solid rgba(117, 180, 228, 0.3);
+    }
+}
+
 body:not(.page-index) {
     .main {
         .content {
@@ -3172,4 +3180,245 @@ body:not(.page-index) {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: rgba(1, 8, 13, 0.5);
+
+    .nav-tabs {
+        margin-bottom: -32px;
+        margin-top: 32px;
+    }
+}
+
+.schedule-day {
+    display: flex;
+    align-items: center;
+    background-color: #061825;
+    margin-right: 1px;
+    transition: all 0.2s;
+
+    &__left {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #75B4E4;
+        margin-right: 8px;
+        transition: all 0.2s;
+    }
+
+    &__day-of-week {
+        font-size: 10px;
+        line-height: 8px;
+        font-weight: bold;
+        color: #75B4E4;
+        margin-bottom: 2px;
+        transition: all 0.2s;
+    }
+
+    &__month {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+        color: #75B4E4;
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        background-color: #082133;
+    }
+
+    &:hover & {
+        &__left {
+            color: white;
+        }
+
+        &__day-of-week {
+            color: white;
+        }
+
+        &__month {
+            color: white;
+        }
+    }
+
+    &.active {
+        .schedule-day__left {
+            color: #174D77;
+        }
+
+        .schedule-day__day-of-week {
+            color: #174D77;
+        }
+
+        .schedule-day__month {
+            color: #333333;
+        }
+    }
+}
+
+.type-switch {
+    border: 1.75676px solid #3A6AA9;
+    box-sizing: border-box;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+
+    &__link {
+        border-radius: 18px;
+        border: 1.75676px solid transparent;
+        transition: all 0.2s;
+        padding: 7px 24px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+        color: #75B4E4;
+
+        &:first-child {
+            margin-left: -1px;
+        }
+
+        &:last-child {
+            margin-right: -1px;
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #75B4E4;
+        }
+
+        &--active {
+            background: linear-gradient(180deg, rgba(58, 106, 169, 0.3) 0%, rgba(58, 106, 169, 0) 100%), #75B4E4;
+            border: 1.75676px solid #75B4E4;
+            color: white;
+
+            &:hover, &:focus {
+                color: white;
+            }
+        }
+    }
+}
+
+.schedule-halls {
+    margin-bottom: 32px;
+    display: block;
+    padding-right: 8px;
+    padding-left: 8px;
+
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+
+    &__single-item {
+        border-bottom: 1px dashed rgba(117, 180, 228, 0.3);
+        padding-top: 48px;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__movie {
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &__movie-poster {
+        margin-bottom: 8px;
+    }
+
+    &__movie-poster-image {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    &__movie-title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__movie-genre {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: #3A6AA9;
+        margin-bottom: 48px;
+    }
+
+    &__hall {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__hall-item {
+        padding-top: 32px;
+        border-bottom: 1px dashed rgba(117, 180, 228, 0.3);
+        padding-bottom: 10px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    &__hall-label {
+        color: white;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: lowercase;
+    }
+
+    &__hall-name {
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+    }
+
+    &__sessions {
+        padding-right: 70px;
+    }
+
+    &__session {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__session-link {
+        background: linear-gradient(180deg, rgba(51, 51, 51, 0.1) 0%, rgba(117, 180, 228, 0.1) 100%), #071E2F;
+        border: 1px solid #75B4E4;
+        box-shadow: 0px 2px 2px rgba(17, 32, 44, 0.3);
+        border-radius: 4px;
+        padding: 8px 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        &:hover, &:focus {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__session-info {
+        color: white;
+        font-size: 10px;
+        line-height: 24px;
+        text-align: center;
+    }
 }
