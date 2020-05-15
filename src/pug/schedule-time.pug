@@ -1,0 +1,216 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Доминион Синема | Расписание'
+    - var pageTitle = 'Расписание сеансов'
+    - var pageClass = 'page-schedule'
+    - var showBreadcrumb = false
+    - var showTitle = true
+    - var showTypeSwitch = true
+    - var showScheduleDays = true
+
+block content
+    .schedule-time
+        .row
+            .col-24.col-lg-18
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:10
+                        .col-14
+                            .schedule-time__title Хищные птицы: Потрясающая история Харли Квинн
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name VIP
+                                .schedule-time__hall-info Зал VIP
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:15
+                        .col-14
+                            .schedule-time__title Соник в кино
+                            .schedule-time__genre Анимация  6+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Atmos
+                                .schedule-time__hall-info DolbyAtmos 3D
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:20
+                        .col-14
+                            .schedule-time__title Звездные войны. Скайуокер. Восход
+                            .schedule-time__genre Фантастика 16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 1
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:25
+                        .col-14
+                            .schedule-time__title Гемини
+                            .schedule-time__genre Фантастика, триллер  16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 3
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:30
+                        .col-14
+                            .schedule-time__title Джокер
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 2
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:40
+                        .col-14
+                            .schedule-time__title Хищные птицы: Потрясающая история Харли Квинн
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name VIP
+                                .schedule-time__hall-info Зал VIP
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:45
+                        .col-14
+                            .schedule-time__title Соник в кино
+                            .schedule-time__genre Анимация 6+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Atmos
+                                .schedule-time__hall-info DolbyAtmos 3D
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 09:50
+                        .col-14
+                            .schedule-time__title Звездные войны. Скайуокер. Восход
+                            .schedule-time__genre Фантастика 16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 1
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 10:00
+                        .col-14
+                            .schedule-time__title Гемини
+                            .schedule-time__genre Фантастика, триллер 16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 3
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 10:15
+                        .col-14
+                            .schedule-time__title Джокер
+                            .schedule-time__genre Ужасы, триллер, комедия 18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 2
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 10:20
+                        .col-14
+                            .schedule-time__title Хищные птицы: Потрясающая история Харли Квинн
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name VIP
+                                .schedule-time__hall-info Зал VIP
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 10:30
+                        .col-14
+                            .schedule-time__title Соник в кино
+                            .schedule-time__genre Анимация  6+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Atmos
+                                .schedule-time__hall-info DolbyAtmos 3D
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 11:10
+                        .col-14
+                            .schedule-time__title Звездные войны. Скайуокер. Восход
+                            .schedule-time__genre Фантастика  16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 1
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 11:20
+                        .col-14
+                            .schedule-time__title Гемини
+                            .schedule-time__genre Фантастика, триллер  16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 3
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 11:35
+                        .col-14
+                            .schedule-time__title Джокер
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 2
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 11:50
+                        .col-14
+                            .schedule-time__title Хищные птицы: Потрясающая история Харли Квинн
+                            .schedule-time__genre Ужасы, триллер, комедия  18+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name VIP
+                                .schedule-time__hall-info Зал VIP
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 12:15
+                        .col-14
+                            .schedule-time__title Соник в кино
+                            .schedule-time__genre Анимация  6+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Atmos
+                                .schedule-time__hall-info DolbyAtmos 3D
+                .schedule-time__single-item
+                    .row
+                        .col-5
+                            a.schedule-time__link(href='#') 12:30
+                        .col-14
+                            .schedule-time__title Звездные войны. Скайуокер. Восход
+                            .schedule-time__genre Фантастика  16+
+                        .col-5
+                            .schedule-time__hall
+                                .schedule-time__hall-name Comfort
+                                .schedule-time__hall-info Зал 1
+            .col-24.col-lg-6
+                .schedule-time__poster
+                    .schedule-time__poster-image
