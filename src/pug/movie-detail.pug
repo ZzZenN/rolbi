@@ -1,0 +1,156 @@
+extends includes/layout.pug
+
+block vars
+    - var title = 'Домининон Синема | Фильм детально'
+    - var pageClass = 'page-movie-detail'
+    - var showBreadcrumb = false
+    - var fullSize = false
+    - var showTitle = true
+    - var pageTitle = 'Расписание сеансов'
+    - var showScheduleDays = true
+    - var showMovieDetail = true
+
+block content
+
+    .movie-detail
+        .schedule-halls__hall-item
+            .row
+                .col-24.col-lg-2
+                    .schedule-halls__hall
+                        .schedule-halls__hall-label Зал
+                        .schedule-halls__hall-name Comfort
+                .col-24.col-lg-22
+                    .schedule-halls__sessions
+                        .row
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:10
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:20
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:25
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:45
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:55
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 14:30
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 15:10
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 15:40
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 16:15
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 19:10
+                                    .schedule-halls__session-info Зал 3
+                        
+        .schedule-halls__hall-item
+            .row
+                .col-24.col-lg-2
+                    .schedule-halls__hall
+                        .schedule-halls__hall-label Зал
+                        .schedule-halls__hall-name Atmos
+                .col-24.col-lg-22
+                    .schedule-halls__sessions
+                        .row
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:10
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:20
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:25
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 2
+
+        .schedule-halls__hall-item
+            .row
+                .col-24.col-lg-2
+                    .schedule-halls__hall
+                        .schedule-halls__hall-label Зал
+                        .schedule-halls__hall-name VIP
+                .col-24.col-lg-22
+                    .schedule-halls__sessions
+                        .row
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:10
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 09:20
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 2
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:25
+                                    .schedule-halls__session-info Зал 1
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:40
+                                    .schedule-halls__session-info Зал 3
+                            .col-2
+                                .schedule-halls__session
+                                    a.schedule-halls__session-link(href='#') 10:10
+                                    .schedule-halls__session-info Зал 2

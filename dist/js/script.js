@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    $('.movie-detail__other-info-link').click(function(event) {
+        if ($(this).hasClass('movie-detail__other-info-link--opened')) {
+            $('.movie-detail__top-left').removeClass('col-lg-8');
+            $('.movie-detail__top-left').addClass('col-lg-4');
+            $('.movie-detail__top-right').removeClass('col-lg-16');
+            $('.movie-detail__top-right').addClass('col-lg-20');
+            $(this).removeClass('movie-detail__other-info-link--opened');
+            $('.movie-detail__other-info').removeClass('movie-detail__other-info--shown');
+            $(this).html('Подробнее о фильме <i class="far fa-chevron-down"></i>');
+        } else {
+            $('.movie-detail__top-left').removeClass('col-lg-4');
+            $('.movie-detail__top-left').addClass('col-lg-8');
+            $('.movie-detail__top-right').removeClass('col-lg-20');
+            $('.movie-detail__top-right').addClass('col-lg-16');
+            $(this).addClass('movie-detail__other-info-link--opened');
+            $('.movie-detail__other-info').addClass('movie-detail__other-info--shown');
+            $(this).html('Свернуть <i class="far fa-chevron-up"></i>');
+        }
+    });
+
    $(document).click(function (event) {
         var winWidth = $(window).innerWidth();
 

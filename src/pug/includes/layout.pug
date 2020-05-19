@@ -9,6 +9,7 @@ block vars
     - var showFooterMap = false
     - var showTypeSwitch = false
     - var showScheduleDays = false
+    - var showMovieDetail = false
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -90,12 +91,39 @@ html(lang="ru")
                                             .contacts-phone__number: a(href='tel:+73902555333') 555-333
 
                     main.main
-                        if showBreadcrumb
-                            .container.pt-4.pb-4
-                                .nav: ol.breadcrumb
-                                    li.breadcrumb-item: a(href="#") Кухня и столовая
-                                    li.breadcrumb-item: a(href="#") Кухонные гарнитуры
-                                    li.breadcrumb-item: a(href="#") Готовые кухонные гарнитуры
+                        if showMovieDetail
+                            .movie-detail__top
+                                .container
+                                    .row
+                                        .col-lg-8.col-24.movie-detail__top-left
+                                            .movie-detail__poster
+                                                img.movie-detail__poster-image(src='../images/movies-1.png')
+                                        .col-lg-16.col-24.movie-detail__top-right
+                                            .movie-detail__title Соник в кино
+                                            .movie-detail__info Анимация, Комедия, Приключения |  6+  |   2 ч. 22 мин.  
+                                            a.btn.btn-site-primary.movie-detail__button-trailer(href='#') <i class="far fa-play"></i> Трейлер
+
+                                            .movie-detail__other-info.movie-detail__other-info--shown
+                                                .movie-detail__text Головокружительное комедийное экшн-приключение, в центре которого – культовый герой: отвязный ярко-синий ежик Соник. Вместе с новообретенным – человеческим – лучшим другом Томом Вачовски он знакомится со сложностями жизни на Земле и противостоит злодейскому доктору Роботнику, который хочет пленить Соника и использовать его безграничные суперсилы для завоевания мирового господства. «Соник в кино» основан на всемирно известной видеоигре от Sega.
+                                                .movie-detail__properties
+                                                    .movie-detail__properties-single
+                                                        .row
+                                                            .col-lg-6.col-24: span.movie-detail__properties-single-label Режиссёр
+                                                            .col-lg-18.col-24: span.movie-detail__properties-single-value Джей Джей Абрамс, Колин Треворроу
+                                                    .movie-detail__properties-single
+                                                        .row
+                                                            .col-lg-6.col-24: span.movie-detail__properties-single-label В ролях
+                                                            .col-lg-18.col-24: span.movie-detail__properties-single-value Энтони Дэниелс, Дейзи Ридли, Адам Драйвер, Джон Бойега, Марк Хэмилл, Донал Глисон, Оскар Айзек, Доминик Монахэн, Лупита Нионго
+                                                    .movie-detail__properties-single
+                                                        .row
+                                                            .col-lg-6.col-24: span.movie-detail__properties-single-label Продолжительность
+                                                            .col-lg-18.col-24: span.movie-detail__properties-single-value 142 мин.
+                                                    .movie-detail__properties-single
+                                                        .row
+                                                            .col-lg-6.col-24: span.movie-detail__properties-single-label Страна
+                                                            .col-lg-18.col-24: span.movie-detail__properties-single-value США
+
+                                            a.movie-detail__other-info-link.movie-detail__other-info-link--opened(href='#') Свернуть <i class="far fa-chevron-up"></i>
 
                         if fullSize
                             if showTitle
