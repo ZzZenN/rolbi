@@ -33,7 +33,7 @@ html(lang="ru")
                 a.mobile-menu-bar__link(href='#mobile-menu-bar' onclick='this.classList.toggle("mobile-menu-bar__link--active")')
                     i.fas.fa-bars
                 a.mobile-menu-bar__logo(href="/")
-                    img.mobile-menu-bar__logo-picture(src="images/header__logo-picture--mobile.svg")
+                    img.mobile-menu-bar__logo-picture(src="../images/header__logo.svg")
 
             div
                 .site-top
@@ -41,35 +41,15 @@ html(lang="ru")
                     nav.navbar.d-lg-none.d-block.py-0.mobile-menu__wrap
                         .fixed-bottom.mobile-menu#mobile-menu-bar
                             ul.navbar-nav.mr-auto
-                                li.nav-item.nav-item--parent
-                                    .nav-item-parent-wrap
-                                        a.nav-link(href='/catalog/plodovye-kultury/')
-                                            span Наше меню
-                                        a.nav-link-opener
-                                    ul.nav-column
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/abrikos/'): span Рационы Питание+Польза
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/vinograd/'): span Обеды
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/vishnya/'): span Завтраки
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/grusha/'): span Меню
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/zhimolost/'): span Детское меню
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/leshchina/'): span Чай. Кофе, десерты
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/malina/'): span Полуфабрикаты
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/persik/'): span Праздничное меню
-                                        li.nav-link: a(href='/catalog/plodovye-kultury/sliva/'): span Винная карта
-                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span О нас
-                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Условия доставки
-                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Новости
-                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Галерея
-                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Контакты
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Фильмы
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Расписание
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Премьеры
+                                li.nav-item: a.nav-link(href='/catalog/dekorativnye/'): span Зрителям
 
                             .mobile-menu__contacts
-                                .mobile-menu__contacts-title Стол заказов
-                                a.mobile-menu__phone(href='tel:+73902266722')
-                                    span +7 (3902) 266-722
-                                .mobile-menu__mail-insta
-                                    a.mobile-menu__contacts-mail(href='mailto:cafekotofey19@yandex.ru') cafekotofey19@yandex.ru
-                                    a.mobile-menu__contacts-insta(href='#'): img(src="images/header__contacts-insta--image.svg")
-                            
+                                .mobile-menu__contacts-title Заказ билетов
+                                a.mobile-menu__phone(href='tel:+73902555333')
+                                    span 555-333                          
                     
                     .header
                         .container
@@ -291,18 +271,18 @@ html(lang="ru")
                     .footer__middle-bottom
                         .container
                             .row
-                                .col-24.col-lg-8.d-flex.align-items-center
+                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                     .footer__address
                                         .footer__address-label Мы находимся по адресу:
                                         .footer__address-text г. Абакан, ул. Некрасова, 52
-                                .col-24.col-lg-8.d-flex.align-items-center.justify-content-center
+                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center
                                     .footer__socials
                                         .socials-icons.d-inline-block
                                             .socials-icons__inner
                                                 a.socials-icons__link.socials-icons__link--type--vk(href="#"): i.fab.fa-vk
                                                 a.socials-icons__link.socials-icons__link--type--fb(href="#"): i.fab.fa-facebook-f
                                                 a.socials-icons__link.socials-icons__link--type--ok(href="#"): i.fab.fa-odnoklassniki
-                                .col-24.col-lg-8.d-flex.justify-content-end
+                                .col-24.col-md-8.d-flex.justify-content-center.justify-content-md-end
                                     .contacts-phone
                                         .contacts-phone__label Заказ билетов
                                         .contacts-phone__number: a(href='tel:+73902555333') 555-333

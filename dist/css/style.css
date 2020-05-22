@@ -11868,8 +11868,20 @@ body {
   padding-bottom: 16px;
 }
 
+@media (max-width: 991px) {
+  .header {
+    display: none;
+  }
+}
+
 .header__logo-link {
   display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .header__logo-link img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -11990,6 +12002,15 @@ body {
 .btn.btn-site-primary:hover, .btn.btn-site-primary:focus {
   background-color: #172B3C;
   color: #75B4E4;
+}
+
+.btn.btn-site-primary--schedule-link {
+  font-size: 24px;
+  line-height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .btn.btn-site-primary--pill {
@@ -12238,7 +12259,7 @@ body {
 }
 
 .mobile-menu-bar {
-  background: url(../images/circles_pattern.png), #891723;
+  background-color: #071825;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
   padding-top: 0;
@@ -12256,7 +12277,19 @@ body {
 
 @media (max-width: 991px) {
   .mobile-menu-bar {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -12286,8 +12319,18 @@ body {
   padding-bottom: 11px;
 }
 
+@media (max-width: 991px) {
+  .mobile-menu-bar__logo {
+    max-width: 270px;
+  }
+}
+
+.mobile-menu-bar__logo-picture {
+  max-width: 100%;
+}
+
 .mobile-menu {
-  background-color: #431513;
+  background-color: #071825;
   overflow-y: scroll;
   height: 100%;
   padding: 0px 20px;
@@ -12398,10 +12441,8 @@ body {
 }
 
 .mobile-menu .navbar-nav > .nav-item > .nav-link {
-  font-family: Karmina Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 37px;
-  line-height: 43px;
-  letter-spacing: 0.1em;
+  font-size: 28px;
+  line-height: 36px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -12464,8 +12505,6 @@ body {
   font-size: 36px;
   line-height: 28px;
   color: white;
-  font-family: Karmina Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  letter-spacing: 0.1em;
   display: inline-block;
 }
 
@@ -13152,6 +13191,13 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .header-menu .nav .nav-link {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 .header-menu .nav .nav-link:after {
   position: absolute;
   content: '';
@@ -13199,12 +13245,6 @@ body {
   color: white !important;
 }
 
-@media (max-width: 1270px) {
-  .header-menu .nav .nav-link {
-    margin: 0 10px;
-  }
-}
-
 .header-menu .nav .nav-link a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13234,6 +13274,12 @@ body {
   font-size: 20px;
   line-height: normal;
   margin-top: 4px;
+}
+
+@media (max-width: 1200px) {
+  .header-menu .nav .nav-link a {
+    font-size: 14px;
+  }
 }
 
 .header-menu .nav .nav-link span.one-lvl {
@@ -13860,13 +13906,6 @@ body {
   padding-bottom: 78px;
 }
 
-@media (max-width: 991px) {
-  .main .content {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
 @media (max-width: 576px) {
   .main .content {
     padding-top: 30px !important;
@@ -13911,7 +13950,7 @@ body {
 @media (max-width: 991px) {
   .footer__middle {
     padding-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -14053,6 +14092,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 24px;
+  }
+}
+
 .footer__address a {
   color: white;
 }
@@ -14071,6 +14116,12 @@ body {
   .footer__socials {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__socials {
+    margin-bottom: 24px;
   }
 }
 
@@ -14127,10 +14178,23 @@ body {
   display: inline-block;
 }
 
+@media (max-width: 767px) {
+  .footer__copyright-text {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
 .footer__confidential-link {
   display: inline-block;
   margin-left: 5px;
   color: #75B4E4 !important;
+}
+
+@media (max-width: 767px) {
+  .footer__confidential-link {
+    width: 100%;
+  }
 }
 
 .footer__developer {
@@ -14758,6 +14822,12 @@ body:not(.page-index) .main .content--no-title {
   padding-right: 16px;
 }
 
+@media (max-width: 991px) {
+  .featured-movie {
+    padding-bottom: 40px;
+  }
+}
+
 .featured-movie__poster {
   margin-bottom: 40px;
 }
@@ -14852,6 +14922,14 @@ body:not(.page-index) .main .content--no-title {
   line-height: 50px;
   text-transform: uppercase;
   margin-top: -5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1270px) {
+  .contacts-phone__number {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .contacts-phone__number a {
@@ -15123,6 +15201,12 @@ body:not(.page-index) .main .content--no-title {
   padding-right: 70px;
 }
 
+@media (max-width: 991px) {
+  .schedule-halls__sessions {
+    padding-right: 0;
+  }
+}
+
 .schedule-halls__session {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -15386,4 +15470,44 @@ body:not(.page-index) .main .content--no-title {
 .movie-detail__top-right {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.select-day-block {
+  font-size: 26px;
+  line-height: 48px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.select-day-block__link {
+  color: #75B4E4;
+  border-bottom: 1px dashed transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 10px;
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -1px;
+}
+
+.select-day-block__link:hover, .select-day-block__link:focus {
+  border-bottom-color: #75B4E4;
+  text-decoration: none;
+  color: #75B4E4;
+}
+
+.select-day-block__link .fas {
+  font-size: 16px;
+  margin-left: 10px;
 }

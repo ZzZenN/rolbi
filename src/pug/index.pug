@@ -22,10 +22,14 @@ block content
 
     .container
 
-        a.btn.btn-site-primary.mb-3(href='#') Расписание
+        .select-day-block
+            span.select-day-block__label В кино
+            a.select-day-block__link(href='#') сегодня <i class="fas fa-caret-down"></i>
+
+            a.btn.btn-site-primary.btn-site-primary--schedule-link(href='schedule-halls.html') Расписание
 
         .row
-            .col-12
+            .col-24.col-md-12
                 .featured-movie
                     .featured-movie__poster
                         img.featured-movie__poster-image(src='../images/movies-1.png')
@@ -35,39 +39,39 @@ block content
                     .featured-movie__buttons
                         a.btn.btn-site-primary.featured-movie__button-trailer <i class="far fa-play"></i> Трейлер
                         a.btn.btn-site-primary.featured-movie__button-more Подробнее <i class="far fa-arrow-right"></i>
-            .col-12
+            .col-24.col-md-12
                 .row
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-2.jpg')
                             .movie__title Зомбилэнд: контрольный выстрел
                             .movie__genre Ужасы, триллер, комедия  18+
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-3.png')
                             .movie__title 1 + 1
                             .movie__genre Драма, комедия  16+
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-4.png')
                             .movie__title Начало
                             .movie__genre Фантастика, боевик, триллер  12+
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-5.png')
                             .movie__title Король лев
                             .movie__genre Мультфильм, мюзикл, драма  0+
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-6.png')
                             .movie__title Валл-и
                             .movie__genre Мультфильм, фантастика  0+
-                    .col-12
+                    .col-24.col-sm-12
                         a.movie(href='#')
                             .movie__poster
                                 img.movie__poster-image(src='../images/movies-7.png')
