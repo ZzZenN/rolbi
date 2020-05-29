@@ -3661,6 +3661,18 @@ body:not(.page-index) {
     align-items: center;
     margin-bottom: 40px;
 
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    &__open-calendar-link {
+        display: flex;
+
+        @media (max-width: 576px) {
+            margin-bottom: 16px;
+        }
+    }
+
     &__link {
         color: #75B4E4;
         border-bottom: 1px dashed transparent;
@@ -3680,6 +3692,10 @@ body:not(.page-index) {
         .fas {
             font-size: 16px;
             margin-left: 10px;
+        }
+
+        @media (max-width: 576px) {
+            margin-right: 0;
         }
     }
 }
