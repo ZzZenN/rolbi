@@ -538,6 +538,11 @@ body {
             padding-bottom: 0;
             padding-left: 25px;
             padding-right: 25px;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                line-height: 32px;
+            }
         }
 
         &--pill {
@@ -783,10 +788,7 @@ body {
     position: fixed;
 
 	@media (max-width: 991px) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
+        display: block;
 	}
 
 	&__link {
@@ -797,7 +799,6 @@ body {
         padding-right: 20px;
         padding-top: 13px;
         padding-bottom: 13px;
-        float: right;
 
 		i {
 			margin-top: 2px;
@@ -821,6 +822,18 @@ body {
 
     &__logo-picture {
         max-width: 100%;
+    }
+
+    &__dial-link {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 900;
+        color: white;
+        padding-right: 15px;
+
+        &:hover, &:focus {
+            color: white;
+        }
     }
 }
 
@@ -1172,15 +1185,20 @@ body {
         display: inline-block;
     }
 
+    @media (max-width: 1200px) {
+        min-height: 245px;
+    }
+
     @media (max-width: 991px) {
-        min-height: 270px;
+        min-height: 195px;
     }
 
     @media (max-width: 767px) {
-        min-height: 395px;
-        justify-content: center;
-        align-items: flex-end;
-        flex-direction: column;
+        min-height: 155px;
+    }
+
+    @media (max-width: 480px) {
+        min-height: 96px;
     }
 
     &__background {
@@ -3067,6 +3085,11 @@ body:not(.page-index) {
         padding-bottom: 40px;
     }
 
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &__poster {
         margin-bottom: 40px;
     }
@@ -3703,20 +3726,13 @@ body:not(.page-index) {
     font-size: 26px;
     line-height: 48px;
     color: white;
-    display: flex;
     align-items: center;
     margin-bottom: 40px;
 
     @media (max-width: 576px) {
         flex-direction: column;
-    }
-
-    &__open-calendar-link {
-        display: flex;
-
-        @media (max-width: 576px) {
-            margin-bottom: 16px;
-        }
+        font-size: 16px;
+        line-height: 32px;
     }
 
     &__link {
@@ -3724,8 +3740,7 @@ body:not(.page-index) {
         border-bottom: 1px dashed transparent;
         transition: all 0.2s;
         margin-left: 10px;
-        margin-right: 60px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         margin-bottom: -1px;
 

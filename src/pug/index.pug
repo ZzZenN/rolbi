@@ -23,11 +23,13 @@ block content
     .container
 
         .select-day-block
-            .select-day-block__open-calendar-link
-                span.select-day-block__label В кино
-                a.select-day-block__link(href='#') сегодня <i class="fas fa-caret-down"></i>
-
-            a.btn.btn-site-primary.btn-site-primary--schedule-link(href='schedule-halls.html') Расписание
+            .row
+                .col-12.col-md-9.col-xl-7.d-flex.align-items-center
+                    .select-day-block__open-calendar-link
+                        span.select-day-block__label В кино
+                        a.select-day-block__link(href='#') сегодня <i class="fas fa-caret-down"></i>
+                .col-12.col-md-15.col-xl-15.d-flex.justify-content-end.justify-content-md-start
+                    a.btn.btn-site-primary.btn-site-primary--schedule-link(href='schedule-halls.html') Расписание
 
         .row
             .col-24.col-md-12

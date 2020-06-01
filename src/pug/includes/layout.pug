@@ -30,10 +30,15 @@ html(lang="ru")
         #page-wrapper.page-wrapper
 
             .mobile-menu-bar
-                a.mobile-menu-bar__link(href='#mobile-menu-bar' onclick='this.classList.toggle("mobile-menu-bar__link--active")')
-                    i.fas.fa-bars
-                a.mobile-menu-bar__logo(href="/")
-                    img.mobile-menu-bar__logo-picture(src="../images/header__logo.svg")
+                .row
+                    .col-4.d-flex.justify-content-start.align-items-center
+                        a.mobile-menu-bar__link(href='#mobile-menu-bar' onclick='this.classList.toggle("mobile-menu-bar__link--active")')
+                            i.fas.fa-bars
+                    .col-16.d-flex.justify-content-center.align-items-center
+                        a.mobile-menu-bar__logo(href="/")
+                            img.mobile-menu-bar__logo-picture(src="../images/header__logo.svg")
+                    .col-4.d-flex.justify-content-end.align-items-center
+                        a.mobile-menu-bar__dial-link(href='tel:+73902555333') <i class="fas fa-phone"></i>
 
             div
                 .site-top
