@@ -3122,6 +3122,11 @@ body:not(.page-index) {
 
     &:hover, &:focus {
         text-decoration: none;
+
+        .movie__poster-image {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        }
     }
 
     &__poster {
@@ -3131,6 +3136,7 @@ body:not(.page-index) {
     &__poster-image {
         width: 100%;
         border-radius: 5px;
+        transition: all 0.3s;
     }
 
     &__title {
@@ -3354,6 +3360,11 @@ body:not(.page-index) {
     &__movie {
         &:hover, &:focus {
             text-decoration: none;
+
+            .schedule-halls__movie-poster-image {
+                transform: translateY(-5px);
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+            }
         }
     }
 
@@ -3364,6 +3375,7 @@ body:not(.page-index) {
     &__movie-poster-image {
         width: 100%;
         border-radius: 5px;
+        transition: all 0.3s;
     }
 
     &__movie-title {

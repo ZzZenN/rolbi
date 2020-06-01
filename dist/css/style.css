@@ -14883,6 +14883,13 @@ body:not(.page-index) .main .content--no-title {
   text-decoration: none;
 }
 
+.movie:hover .movie__poster-image, .movie:focus .movie__poster-image {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 .movie__poster {
   margin-bottom: 8px;
 }
@@ -14890,6 +14897,8 @@ body:not(.page-index) .main .content--no-title {
 .movie__poster-image {
   width: 100%;
   border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .movie__title {
@@ -15135,6 +15144,13 @@ body:not(.page-index) .main .content--no-title {
   text-decoration: none;
 }
 
+.schedule-halls__movie:hover .schedule-halls__movie-poster-image, .schedule-halls__movie:focus .schedule-halls__movie-poster-image {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 .schedule-halls__movie-poster {
   margin-bottom: 8px;
 }
@@ -15142,6 +15158,8 @@ body:not(.page-index) .main .content--no-title {
 .schedule-halls__movie-poster-image {
   width: 100%;
   border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .schedule-halls__movie-title {
