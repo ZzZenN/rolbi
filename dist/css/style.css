@@ -11760,16 +11760,10 @@ h1, .h1 {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-@media (max-width: 767px) {
-  h1, .h1 {
-    font-size: 42px;
-    line-height: 50px;
-  }
-}
-
 @media (max-width: 576px) {
   h1, .h1 {
-    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -12015,10 +12009,12 @@ body {
 
 @media (max-width: 576px) {
   .btn.btn-site-primary--schedule-link {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 32px;
     border-color: white;
     color: white;
+    padding-left: 14px;
+    padding-right: 14px;
   }
   .btn.btn-site-primary--schedule-link:hover, .btn.btn-site-primary--schedule-link:focus {
     border-color: #75B4E4;
@@ -12274,8 +12270,8 @@ body {
   background-color: #071825;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 0;
   padding-right: 0;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
@@ -12295,16 +12291,10 @@ body {
 
 .mobile-menu-bar__link {
   color: #FFFFFF;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 32px;
   padding-left: 15px;
   padding-right: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-.mobile-menu-bar__link i {
-  margin-top: 2px;
 }
 
 .mobile-menu-bar__link:hover, .mobile-menu-bar__link:focus {
@@ -12313,9 +12303,6 @@ body {
 
 .mobile-menu-bar__logo {
   display: inline-block;
-  padding-top: 11px;
-  padding-left: 20px;
-  padding-bottom: 11px;
 }
 
 @media (max-width: 991px) {
@@ -14307,23 +14294,6 @@ body {
   }
 }
 
-.page-index__our-menu-wrap {
-  background-image: url(../images/bg--paws--2.svg);
-  background-position: 50%;
-  background-size: cover;
-  padding-top: 300px;
-  padding-bottom: 100px;
-  background-repeat: no-repeat;
-  margin-top: -300px;
-  margin-bottom: -100px;
-}
-
-@media (max-width: 991px) {
-  .page-index__our-menu-wrap {
-    background: none;
-  }
-}
-
 .page-schedule .title-block {
   border-bottom: 1px solid rgba(117, 180, 228, 0.3);
 }
@@ -14872,7 +14842,7 @@ body:not(.page-index) .main .content--no-title {
 
 @media (max-width: 576px) {
   .featured-movie__poster {
-    margin-bottom: 22px;
+    margin-bottom: 8px;
   }
 }
 
@@ -14889,6 +14859,13 @@ body:not(.page-index) .main .content--no-title {
   margin-bottom: 8px;
 }
 
+@media (max-width: 576px) {
+  .featured-movie__title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
 .featured-movie__genre {
   font-weight: 500;
   font-size: 16px;
@@ -14897,11 +14874,30 @@ body:not(.page-index) .main .content--no-title {
   margin-bottom: 15px;
 }
 
+@media (max-width: 576px) {
+  .featured-movie__genre {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .featured-movie__announce {
   font-size: 16px;
   line-height: 24px;
   color: white;
   margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  .featured-movie__announce {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-movie__buttons {
+    display: none;
+  }
 }
 
 .featured-movie__button-trailer {
@@ -14997,6 +14993,15 @@ body:not(.page-index) .main .content--no-title {
   color: white;
 }
 
+@media (max-width: 576px) {
+  .movie__title {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+}
+
 .movie__genre {
   font-weight: 500;
   font-size: 12px;
@@ -15006,9 +15011,17 @@ body:not(.page-index) .main .content--no-title {
 }
 
 @media (max-width: 576px) {
+  .movie__genre {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
   .movie {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 56px;
   }
 }
 
@@ -15088,9 +15101,15 @@ body:not(.page-index) .main .content--no-title {
   background-color: rgba(1, 8, 13, 0.5);
 }
 
-.title-block .nav-tabs {
-  margin-bottom: -32px;
-  margin-top: 32px;
+@media (max-width: 576px) {
+  .title-block {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.title-block h1 {
+  margin-top: 8px;
 }
 
 .schedule-day {
@@ -15116,6 +15135,18 @@ body:not(.page-index) .main .content--no-title {
   transition: all 0.2s;
 }
 
+@media (max-width: 767px) {
+  .schedule-day__left {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .schedule-day__right {
+    margin-bottom: -2px;
+  }
+}
+
 .schedule-day__day-of-week {
   font-size: 10px;
   line-height: 8px;
@@ -15133,6 +15164,12 @@ body:not(.page-index) .main .content--no-title {
   color: #75B4E4;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 767px) {
+  .schedule-day__month {
+    font-size: 10px;
+  }
 }
 
 .schedule-day:hover {
@@ -15163,6 +15200,40 @@ body:not(.page-index) .main .content--no-title {
   color: #333333;
 }
 
+.schedule-days {
+  margin-bottom: -34px;
+  margin-top: 24px;
+}
+
+@media (max-width: 576px) {
+  .schedule-days {
+    margin-bottom: -26px;
+    margin-top: 16px;
+  }
+}
+
+.schedule-days .nav-tabs {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.schedule-days .nav-item {
+  margin-bottom: 0;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  max-width: 96vw;
+  padding: 0;
+  cursor: pointer;
+}
+
 .type-switch {
   border: 1.75676px solid #3A6AA9;
   -webkit-box-sizing: border-box;
@@ -15173,6 +15244,12 @@ body:not(.page-index) .main .content--no-title {
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .type-switch {
+    margin-top: 16px;
+  }
 }
 
 .type-switch__link {
@@ -15710,7 +15787,7 @@ body:not(.page-index) .main .content--no-title {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 32px;
     margin-bottom: 24px;
     white-space: nowrap;

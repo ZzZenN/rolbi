@@ -79,6 +79,14 @@ $(document).ready(function() {
   		$('li.one-lvl ul').addClass('fadeInUp animated');
 	}, function() {
 		$('li.one-lvl ul').removeClass('fadeInUp animated');
-	});
+    });
+    
+    var scheduleSwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 0,
+        freeMode: true,
+        slidesPerView: 'auto'
+    });
 
 });

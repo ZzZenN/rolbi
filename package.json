@@ -22,6 +22,7 @@
     "jquery": "^3.4.1",
     "mmenu-js": "^8.4.0",
     "popper.js": "^1.15.0",
-    "slick-slider": "^1.8.2"
+    "slick-slider": "^1.8.2",
+    "swiper": "^5.4.1"
   }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="libs/slick-slider/slick/slick.css"/>
     <link rel="stylesheet" href="libs/slick-slider/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="page-schedule">
@@ -66,63 +67,65 @@
             <div class="title-block">
               <div class="container">
                 <div class="row">
-                  <div class="col-24 col-lg-18 d-flex align-items-center">
+                  <div class="col-24 col-md-14 d-flex align-items-center">
                     <h1>Расписание сеансов</h1>
                   </div>
-                  <div class="col-24 col-lg-6 d-flex justify-content-end align-items-center">
+                  <div class="col-24 col-md-10 d-flex justify-content-center justify-content-md-end align-items-center">
                     <div class="type-switch"><a class="type-switch__link type-switch__link--active" href="schedule-halls.html">По залам</a><a class="type-switch__link" href="#">По времени</a></div>
                   </div>
                 </div>
-                <ul class="nav nav-tabs">
-                  <li class="nav-item"><a class="nav-link active schedule-day" href="#">
-                      <div class="schedule-day__left">27</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Сегодня</div>
-                        <div class="schedule-day__month">Октябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">28</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Завтра</div>
-                        <div class="schedule-day__month">Октябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">29</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Чт</div>
-                        <div class="schedule-day__month">Октябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">30</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Пт</div>
-                        <div class="schedule-day__month">Октябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">31</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Сб</div>
-                        <div class="schedule-day__month">Октябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">01</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Вс</div>
-                        <div class="schedule-day__month">Ноябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">02</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Пн</div>
-                        <div class="schedule-day__month">Ноябрь</div>
-                      </div></a></li>
-                  <li class="nav-item"><a class="nav-link schedule-day" href="#">
-                      <div class="schedule-day__left">03</div>
-                      <div class="schedule-day__right">
-                        <div class="schedule-day__day-of-week">Вт</div>
-                        <div class="schedule-day__month">Ноябрь</div>
-                      </div></a></li>
-                </ul>
+                <div class="swiper-container schedule-days">
+                  <ul class="nav nav-tabs swiper-wrapper">
+                    <li class="nav-item swiper-slide"><a class="nav-link active schedule-day" href="test.html">
+                        <div class="schedule-day__left">27</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Сегодня</div>
+                          <div class="schedule-day__month">Октябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">28</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Завтра</div>
+                          <div class="schedule-day__month">Октябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">29</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Чт</div>
+                          <div class="schedule-day__month">Октябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">30</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Пт</div>
+                          <div class="schedule-day__month">Октябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">31</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Сб</div>
+                          <div class="schedule-day__month">Октябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">01</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Вс</div>
+                          <div class="schedule-day__month">Ноябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">02</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Пн</div>
+                          <div class="schedule-day__month">Ноябрь</div>
+                        </div></a></li>
+                    <li class="nav-item swiper-slide"><a class="nav-link schedule-day" href="#">
+                        <div class="schedule-day__left">03</div>
+                        <div class="schedule-day__right">
+                          <div class="schedule-day__day-of-week">Вт</div>
+                          <div class="schedule-day__month">Ноябрь</div>
+                        </div></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="container">
@@ -480,6 +483,7 @@
       <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
       <script src="libs/slick-slider/slick/slick.min.js"></script>
+      <script src="libs/swiper/swiper.min.js"></script>
       <script src="js/script.js"></script>
     </div>
   </body>
