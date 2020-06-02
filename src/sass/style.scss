@@ -542,6 +542,12 @@ body {
             @media (max-width: 576px) {
                 font-size: 16px;
                 line-height: 32px;
+                border-color: white;
+                color: white;
+
+                &:hover, &:focus {
+                    border-color: #75B4E4;
+                }
             }
         }
 
@@ -1089,6 +1095,10 @@ body {
             max-width: none;
             padding-left: 0;
             padding-right: 0;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 24px;
         }
     }
 
@@ -2296,6 +2306,10 @@ body {
             padding-top: 45px;
             padding-bottom: 0;
         }
+
+        @media (max-width: 576px) {
+            padding-top: 0;
+        }
     }
 
     &__middle-bottom {
@@ -2471,6 +2485,10 @@ body {
             width: 100%;
             text-align: center;
             margin-bottom: 45px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 16px;
         }
     }
 
@@ -3092,6 +3110,10 @@ body:not(.page-index) {
 
     &__poster {
         margin-bottom: 40px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 22px;
+        }
     }
 
     &__poster-image {
@@ -3209,6 +3231,11 @@ body:not(.page-index) {
         line-height: 24px;
         color: #3A6AA9;
         margin-bottom: 15px;
+    }
+
+    @media (max-width: 576px) {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -3412,6 +3439,10 @@ body:not(.page-index) {
         &:last-child {
             border-bottom: none;
         }
+
+        @media (max-width: 767px) {
+            padding-top: 32px;
+        }
     }
 
     &__movie {
@@ -3423,16 +3454,40 @@ body:not(.page-index) {
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
             }
         }
+
+        @media (max-width: 767px) {
+            display: flex;
+            margin-right: -16px;
+            margin-left: -16px;
+            margin-bottom: 24px;
+        }
     }
 
     &__movie-poster {
         margin-bottom: 8px;
+
+        @media (max-width: 767px) {
+            width: 30%;
+            display: inline-flex;
+            margin-bottom: 0;
+            padding-left: 16px;
+        }
     }
 
     &__movie-poster-image {
         width: 100%;
         border-radius: 5px;
         transition: all 0.3s;
+    }
+
+    &__movie-text {
+        @media (max-width: 767px) {
+            width: 70%;
+            display: inline-flex;
+            flex-direction: column;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
     }
 
     &__movie-title {
@@ -3453,6 +3508,12 @@ body:not(.page-index) {
     &__hall {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 767px) {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 16px;
+        }
     }
 
     &__hall-item {
@@ -3467,6 +3528,12 @@ body:not(.page-index) {
         &:first-child {
             padding-top: 0;
         }
+
+        @media (max-width: 767px) {
+            border-bottom: none;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
     }
 
     &__hall-label {
@@ -3474,6 +3541,13 @@ body:not(.page-index) {
         font-size: 12px;
         line-height: 16px;
         text-transform: lowercase;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            text-transform: none;
+            display: inline-flex;
+            margin-right: 5px;
+        }
     }
 
     &__hall-name {
@@ -3500,6 +3574,14 @@ body:not(.page-index) {
         padding-right: 5px;
         margin-right: 8px;
         margin-bottom: 16px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 24px;
+            margin-right: 0;
+        }
     }
 
     &__session-link {
@@ -3512,10 +3594,18 @@ body:not(.page-index) {
         justify-content: center;
         align-items: center;
         color: white;
+        font-size: 14px;
+        line-height: 16px;
 
         &:hover, &:focus {
             color: white;
             text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            font-size: 15px;
+            padding: 6px 13px;
         }
     }
 
@@ -3524,6 +3614,15 @@ body:not(.page-index) {
         font-size: 10px;
         line-height: 24px;
         text-align: center;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -3733,6 +3832,8 @@ body:not(.page-index) {
         flex-direction: column;
         font-size: 16px;
         line-height: 32px;
+        margin-bottom: 24px;
+        white-space: nowrap;
     }
 
     &__link {
@@ -3757,6 +3858,7 @@ body:not(.page-index) {
 
         @media (max-width: 576px) {
             margin-right: 0;
+            margin-left: 8px;
         }
     }
 }
