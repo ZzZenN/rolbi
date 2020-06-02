@@ -89,4 +89,23 @@ $(document).ready(function() {
         slidesPerView: 'auto'
     });
 
+    $('.select-day-block__link').click(function(event) {
+        event.preventDefault();
+        var selectDayDropdown = $(this).parent().find('.select-day-block__dropdown');
+        if ($(selectDayDropdown).hasClass('select-day-block__dropdown--active')) {
+            $(selectDayDropdown).removeClass('select-day-block__dropdown--active');
+        } else {
+            $(selectDayDropdown).addClass('select-day-block__dropdown--active');
+        }
+    });
+
+    $('.select-day-block__dropdown-link').click(function(event) {
+        $(".select-day-block__dropdown").removeClass('select-day-block__dropdown--active');
+    });
+
+    $(document).mouseup(function(e) {
+        var container = $(".select-day-block__dropdown");
+        if (!container.is(e.target) && container.has(e.target).length === 0) container.removeClass('select-day-block__dropdown--active');
+    });
+
 });

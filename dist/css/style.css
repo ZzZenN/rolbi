@@ -15826,3 +15826,49 @@ body:not(.page-index) .main .content--no-title {
     margin-left: 8px;
   }
 }
+
+.select-day-block__dropdown {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 26px;
+  line-height: 40px;
+  padding: 8px 16px;
+  position: absolute;
+  right: -58px;
+  top: -4px;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+  .select-day-block__dropdown {
+    font-size: 22px;
+    top: -12px;
+    right: -48px;
+  }
+}
+
+.select-day-block__dropdown--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.select-day-block__dropdown-link {
+  color: #061825;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+}
+
+.select-day-block__dropdown-link:hover, .select-day-block__dropdown-link:focus {
+  color: #061825;
+  text-decoration: none;
+}
+
+.select-day-block__open-calendar-link {
+  position: relative;
+}

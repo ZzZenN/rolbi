@@ -3917,4 +3917,45 @@ body:not(.page-index) {
             margin-left: 8px;
         }
     }
+
+    &__dropdown {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        font-size: 26px;
+        line-height: 40px;
+        padding: 8px 16px;
+        position: absolute;
+        right: -58px;
+        top: -4px;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+
+        @media (max-width: 576px) {
+            font-size: 22px;
+            top: -12px;
+            right: -48px;
+        }
+
+        &--active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &__dropdown-link {
+        color: #061825;
+        display: flex;
+        right: 0;
+
+        &:hover, &:focus {
+            color: #061825;
+            text-decoration: none;
+        }
+    }
+
+    &__open-calendar-link {
+        position: relative;
+    }
 }
