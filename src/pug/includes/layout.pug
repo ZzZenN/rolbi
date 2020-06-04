@@ -71,25 +71,27 @@ html(lang="ru")
                                                     li.nav-link: a(href="schedule-halls.html"): span.one-lvl Расписание
                                                     li.nav-link: a(href="premiers.html"): span.one-lvl Премьеры
                                                     li.nav-link: a(href="shops.html"): span.one-lvl Зрителям
-                                    .col-12.col-md-4.d-flex.align-items-center
+                                    .col-12.col-md-4.d-flex.align-items-center.justify-content-end
                                         .contacts-phone
                                             .contacts-phone__label Заказ билетов
-                                            .contacts-phone__number: a(href='tel:+73902555333') 555-333
+                                            .contacts-phone__number
+                                                i.fas.fa-phone
+                                                a(href='tel:+73902555333') 555-333
 
                     main.main
                         if showMovieDetail
                             .movie-detail__top
                                 .container
                                     .row
-                                        .col-lg-8.col-24.movie-detail__top-left
+                                        .col-lg-4.col-24.movie-detail__top-left
                                             .movie-detail__poster
                                                 img.movie-detail__poster-image(src='images/movies-1.png')
-                                        .col-lg-16.col-24.movie-detail__top-right
+                                        .col-lg-20.col-24.movie-detail__top-right
                                             .movie-detail__title Соник в кино
                                             .movie-detail__info Анимация, Комедия, Приключения |  6+  |   2 ч. 22 мин.  
                                             a.btn.btn-site-primary.movie-detail__button-trailer(href='#') <i class="far fa-play"></i> Трейлер
 
-                                            .movie-detail__other-info.movie-detail__other-info--shown
+                                            .movie-detail__other-info
                                                 .movie-detail__text Головокружительное комедийное экшн-приключение, в центре которого – культовый герой: отвязный ярко-синий ежик Соник. Вместе с новообретенным – человеческим – лучшим другом Томом Вачовски он знакомится со сложностями жизни на Земле и противостоит злодейскому доктору Роботнику, который хочет пленить Соника и использовать его безграничные суперсилы для завоевания мирового господства. «Соник в кино» основан на всемирно известной видеоигре от Sega.
                                                 .movie-detail__properties
                                                     .movie-detail__properties-single
@@ -109,21 +111,21 @@ html(lang="ru")
                                                             .col-lg-6.col-24: span.movie-detail__properties-single-label Страна
                                                             .col-lg-18.col-24: span.movie-detail__properties-single-value США
 
-                                            a.movie-detail__other-info-link.movie-detail__other-info-link--opened(href='#') Свернуть <i class="far fa-chevron-up"></i>
+                                            a.movie-detail__other-info-link(href='javascript:void(0)') Подробнее о фильме <i class="far fa-chevron-down"></i>
 
                         if fullSize
                             if showTitle
                                 .title-block
                                     .row
                                         if showTypeSwitch
-                                            .col-24.col-md-14.d-flex.align-items-center
+                                            .col-24.col-md-14.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                                 h1 #{pageTitle}
                                             .col-24.col-md-10.d-flex.justify-content-center.justify-content-md-end.align-items-center
                                                 .type-switch
                                                     a.type-switch__link.type-switch__link--active(href='schedule-halls.html') По залам
                                                     a.type-switch__link(href='#') По времени
                                         else
-                                            .col-24.d-flex.align-items-center
+                                            .col-24.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                                 h1 #{pageTitle} 
                                     if showScheduleDays
 
@@ -188,67 +190,70 @@ html(lang="ru")
                                     .container
                                         .row
                                             if showTypeSwitch
-                                                .col-24.col-md-14.d-flex.align-items-center
+                                                .col-24.col-md-14.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                                     h1 #{pageTitle}
                                                 .col-24.col-md-10.d-flex.justify-content-center.justify-content-md-end.align-items-center
                                                     .type-switch
                                                         a.type-switch__link.type-switch__link--active(href='schedule-halls.html') По залам
                                                         a.type-switch__link(href='#') По времени
                                             else
-                                                .col-24.d-flex.align-items-center
+                                                .col-24.d-flex.align-items-center.justify-content-center.justify-content-md-start
                                                     h1 #{pageTitle} 
 
                                         if showScheduleDays
-                                            .swiper-container.schedule-days
-                                                ul.nav.nav-tabs.swiper-wrapper
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.active.schedule-day(href='test.html')
-                                                            .schedule-day__left 27
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Сегодня
-                                                                .schedule-day__month Октябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 28
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Завтра
-                                                                .schedule-day__month Октябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 29
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Чт
-                                                                .schedule-day__month Октябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 30
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Пт
-                                                                .schedule-day__month Октябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 31
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Сб
-                                                                .schedule-day__month Октябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 01
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Вс
-                                                                .schedule-day__month Ноябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 02
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Пн
-                                                                .schedule-day__month Ноябрь
-                                                    li.nav-item.swiper-slide
-                                                        a.nav-link.schedule-day(href='#')
-                                                            .schedule-day__left 03
-                                                            .schedule-day__right
-                                                                .schedule-day__day-of-week Вт
-                                                                .schedule-day__month Ноябрь
+                                            .swiper-outer
+                                                .swiper-button-prev
+                                                .swiper-container.schedule-days
+                                                    ul.nav.nav-tabs.swiper-wrapper
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.active.schedule-day(href='test.html')
+                                                                .schedule-day__left 27
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Сегодня
+                                                                    .schedule-day__month Октябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 28
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Завтра
+                                                                    .schedule-day__month Октябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 29
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Чт
+                                                                    .schedule-day__month Октябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 30
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Пт
+                                                                    .schedule-day__month Октябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 31
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Сб
+                                                                    .schedule-day__month Октябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 01
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Вс
+                                                                    .schedule-day__month Ноябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 02
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Пн
+                                                                    .schedule-day__month Ноябрь
+                                                        li.nav-item.swiper-slide
+                                                            a.nav-link.schedule-day(href='#')
+                                                                .schedule-day__left 03
+                                                                .schedule-day__right
+                                                                    .schedule-day__day-of-week Вт
+                                                                    .schedule-day__month Ноябрь
+                                                .swiper-button-next
                                 .container
                                     .content
                                         block content
@@ -268,8 +273,8 @@ html(lang="ru")
                                     .col-24.col-lg-12.col-xl-10.d-flex.align-items-center
                                         a.footer__site-logo-link(href="#")
                                             img(src='images/header__logo.svg')
-                                    .col-24.col-lg-12.col-xl-14.d-flex.align-items-center.justify-content-end
-                                        .header-menu
+                                    .col-24.col-lg-12.col-xl-14.d-flex.align-items-center.justify-content-center.justify-content-lg-end
+                                        .header-menu.header-menu--footer
                                             .header-menu__inner
                                                 ul.nav
                                                     li.nav-link: a(href="shops.html"): span.one-lvl Фильмы
@@ -280,21 +285,23 @@ html(lang="ru")
                     .footer__middle-bottom
                         .container
                             .row
-                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center.justify-content-md-start
+                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center.justify-content-md-start.order-1.order-md-1
                                     .footer__address
                                         .footer__address-label Мы находимся по адресу:
                                         .footer__address-text г. Абакан, ул. Некрасова, 52
-                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center
+                                .col-24.col-md-8.d-flex.align-items-center.justify-content-center.order-3.order-md-2
                                     .footer__socials
                                         .socials-icons.d-inline-block
                                             .socials-icons__inner
                                                 a.socials-icons__link.socials-icons__link--type--vk(href="#"): i.fab.fa-vk
                                                 a.socials-icons__link.socials-icons__link--type--fb(href="#"): i.fab.fa-facebook-f
                                                 a.socials-icons__link.socials-icons__link--type--ok(href="#"): i.fab.fa-odnoklassniki
-                                .col-24.col-md-8.d-flex.justify-content-center.justify-content-md-end
+                                .col-24.col-md-8.d-flex.justify-content-center.justify-content-md-end.order-2.order-md-3
                                     .contacts-phone
                                         .contacts-phone__label Заказ билетов
-                                        .contacts-phone__number: a(href='tel:+73902555333') 555-333
+                                        .contacts-phone__number
+                                            i.fas.fa-phone
+                                            a(href='tel:+73902555333') 555-333
 
                 .footer__bottom
                     .container

@@ -86,7 +86,11 @@ $(document).ready(function() {
         loop: false,
         spaceBetween: 0,
         freeMode: true,
-        slidesPerView: 'auto'
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
     $('.select-day-block__link').click(function(event) {
